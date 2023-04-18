@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+        var mylista = [
+            [22,34,18],
+            [7,80,17],
+            [3,15,99]
+        ]
+         
+        var menor = Infinity;
+        var maior = -Infinity;
+
+        for (let i = 0; i < mylista.length; i++){
+            for (let j = 0; j < mylista[i].length;j++){
+                if(mylista[i][j] < menor){
+                    menor = mylista[i][j];
+                }
+                if (mylista[i][j] > maior){
+                    maior = mylista[i][j];
+                }
+            }
+        }
+        
+
+        console.log(maior, menor)
+    </script>
+     
+</body>
+</html>
